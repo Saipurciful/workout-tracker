@@ -11,7 +11,7 @@ router.post("/api/workout", ({ body }, res) => {
         });
 });
 
-app.post("/submit", ({ body }, res) => {
+router.post("/submit", ({ body }, res) => {
     db.Workout.create(body)
         .then(({ _id }) => db.Workout.findOneAndUpdate({}, { $push: { Workouts: _id } }, { new: true }))
         .then(dbWorkout => {

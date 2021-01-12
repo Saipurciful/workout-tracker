@@ -1,9 +1,5 @@
 // info from seed.js
-
-
 const mongoose = require("mongoose");
-const { stringify } = require("querystring");
-const { Workout } = require(".");
 const Schema = mongoose.Schema;
 
 const workoutSchema = new Schema({
@@ -28,15 +24,15 @@ const workoutSchema = new Schema({
         },
         weight: {
             type: Number,
-            required: "Please enter weight"
+
         },
         reps: {
             type: Number,
-            required: "Please enter number of reps"
+
         },
         sets: {
             type: Number,
-            required: "Please enter number of sets"
+
         },
         distance: {
             type: Number
@@ -45,6 +41,6 @@ const workoutSchema = new Schema({
 
 });
 
-const Note = mongoose.model("Workout", workoutSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 module.exports = Workout;
