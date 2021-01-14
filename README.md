@@ -9,6 +9,7 @@
 * [License](#License)
 * [Contributing Guildline](#Contributing-Guildline)
 * [Tests Instructions](#Tests-Instructions)
+* [Deployed Project](#Deployed-Project)
 
 
 ## Technique Usage
@@ -53,5 +54,5 @@
 <img src="pictures/dashboard.png" style="width: 350px;"><br>
 
 
-## Link to the project site. 
+## Deployed Project. 
 * https://frozen-eyrie-31906.herokuapp.com/
