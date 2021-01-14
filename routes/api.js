@@ -39,14 +39,15 @@ router.get("/api/workouts/range", (req, res) => {
         {
             $addFields: {
                 totalDuration: { $sum: "$duration" },
-                // totalWeight: { $sum: "$weight" }
+
+
             }
         },
         {
             $addFields: {
                 totalExercises:
                     { $add: ["$totalDuration", "$weight", "$reps", "$sets", "$distance"] }
-            },
+            }
         }
     ])
         // Workout.find({})
